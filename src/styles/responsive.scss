@@ -1,0 +1,28 @@
+@media (max-width: 1000px) {
+	.promo-info {
+		width: 100%!important;
+		padding: 20px;
+		
+	}
+}
+@media (max-width: 900px) {
+	.menu-toggle {
+		display: block;
+		margin-right: 20px;
+	}
+	.header-logo {
+		margin-left: 20px;
+	}
+	.header-nav {
+		display: none;
+		position: absolute;
+		top: 76px;
+		right: 0;
+		z-index: 999;
+		background: #1d2126;
+		padding: 20px;
+	}
+	.header-nav-item:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
