@@ -5,15 +5,15 @@
 				<div class="header__logo header-logo">
 					<h1 class="header-logo__title">M<span class="header-logo__o">o</span>dest.</h1>
 				</div>
-				<div class="header__menuToggle menu-toggle" v-on:click="openNav()" >
+				<div class="header__menuToggle menu-toggle" onclick="openNav()">
 					<div class="menu-toggle__hamburger hamburger">
 						<span class="hamburger__item"></span>
 						<span class="hamburger__item"></span>
 						<span class="hamburger__item"></span>
 					</div>
 				</div>
-				<ul class="header__nav header-nav" ref="myNav">
-					<router-link tag="li" class="header-nav__item header-nav-item" to="/modest" active-class="header-nav-item__link_active" exact>
+				<ul class="header__nav header-nav" id="myNav">
+					<router-link tag="li" class="header-nav__item header-nav-item" to="/Modest" active-class="header-nav-item__link_active" exact>
 						<a class="header-nav-item__link">Home</a>
 					</router-link>
 					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
@@ -41,11 +41,5 @@
 </template>	
 
 <script>
-	export default {
-		methods: {
-			openNav() {
-				this.$refs.myNav.style.display="block";
-			}
-	}
-}
+
 </script>

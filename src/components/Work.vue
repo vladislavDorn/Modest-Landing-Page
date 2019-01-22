@@ -15,7 +15,8 @@
 					<div class="work-item__work-block-info work-block-info">
 						<p class="work-block-info__info">{{ work.description }}</p>
 					</div>
-				</div>	
+				</div>
+				<button class="work-item__work-show-btn modest-btn">Show me more</button>
 			</div>
 		</div>
 	</section>
