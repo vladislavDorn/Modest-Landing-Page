@@ -5,34 +5,28 @@
 				<div class="header__logo header-logo">
 					<h1 class="header-logo__title">M<span class="header-logo__o">o</span>dest.</h1>
 				</div>
-				<div class="header__menuToggle menu-toggle" onclick="openNav()">
-					<div class="menu-toggle__hamburger hamburger">
+				<div class="header__menuToggle menu-toggle" v-if="show" key="on" @click="show = false">
+					<div class="menu-toggle__hamburger hamburger" >
 						<span class="hamburger__item"></span>
 						<span class="hamburger__item"></span>
 						<span class="hamburger__item"></span>
 					</div>
 				</div>
-				<ul class="header__nav header-nav" id="myNav">
-					<router-link tag="li" class="header-nav__item header-nav-item" to="/Modest" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Home</a>
-					</router-link>
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">About</a>
-					</router-link>	
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Work</a>
-					</router-link>	
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Team</a>
-					</router-link>	
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Services</a>
-					</router-link>	
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Features</a>
-					</router-link>	
-					<router-link tag="li" class="header-nav__item header-nav-item" to="#" active-class="header-nav-item__link_active" exact>
-						<a class="header-nav-item__link">Contact</a>
+				<div class="header__menuToggle menu-toggle" v-else key="off" @click="show = true">
+					<div class="menu-toggle__hamburger hamburger" >
+						<span class="hamburger__item"></span>
+						<span class="hamburger__item"></span>
+						<span class="hamburger__item"></span>
+					</div>
+				</div>
+				<ul class="header__nav header-nav" v-bind:class="{ active: show }" v-if="show">
+					<router-link tag="li" class="header-nav__item header-nav-item" :to="link.link" active-class="header-nav-item__link_active" exact v-for="link in links">
+						<a class="header-nav-item__link">{{ link.name }}</a>
+					</router-link>		
+				</ul>
+				<ul class="header__nav header-nav">
+					<router-link tag="li" class="header-nav__item header-nav-item" :to="link.link" active-class="header-nav-item__link_active" exact v-for="link in links">
+						<a class="header-nav-item__link">{{ link.name }}</a>
 					</router-link>		
 				</ul>
 			</div>
@@ -41,5 +35,41 @@
 </template>	
 
 <script>
-
+	export default {
+		data() {
+			return{
+				show: false,
+				links: [
+					{
+						name: 'Home',
+						link: '/'
+					},
+					{
+						name: 'About',
+						link: '#about'
+					},
+					{
+						name: 'Work',
+						link: '#work'
+					},
+					{
+						name: 'Team',
+						link: '#team'
+					},
+					{
+						name: 'Services',
+						link: '#services'
+					},
+					{
+						name: 'Features',
+						link: '#features'
+					},
+					{
+						name: 'Contact',
+						link: '#contact'
+					},
+				]
+			}
+		}
+	}
 </script>

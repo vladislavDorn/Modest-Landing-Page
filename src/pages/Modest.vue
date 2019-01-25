@@ -8,6 +8,7 @@
      <activity></activity>
      <features></features>
      <contact></contact>
+     <app-footer></app-footer>
   </div> 
 </template>
 
@@ -20,6 +21,7 @@
   import Activity from '../components/Activity.vue'
   import Features from '../components/Features.vue'
   import Contact from '../components/Contact.vue'
+  import Footer from '../components/Footer.vue'
  
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     'work': Work,
     'activity': Activity,
     'features': Features,
-    'contact': Contact
+    'contact': Contact,
+    'app-footer': Footer
   }
 }
 </script>

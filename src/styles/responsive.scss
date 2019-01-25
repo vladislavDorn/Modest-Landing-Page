@@ -12,10 +12,8 @@
 	.header-logo {
 		margin-left: 20px;
 	}
-	#myNav {
-		display: none;
-	}
 	.header-nav {
+		display: none;
 		position: absolute;
 		top: 75px;
 		right: 0;
@@ -25,5 +23,117 @@
 	}
 	.header-nav-item:not(:last-child) {
 		margin-bottom: 25px;
+	}
+	.promo-slider .promo-image__img {
+		height: 400px;
+	}
+	.about__about-title {
+		margin-bottom: 20px;
+	}
+	.about-list {
+		padding-left: 10px;
+		&__about-item, &__about-right-block {
+		width: 100%;
+		}
+	}
+	.about-social-block {
+		margin: 20px 0;
+	}
+	.team__team-title {
+		margin-bottom: 20px;
+	}
+	.team__team-list {
+		justify-content: space-around;
+	}
+	.team-item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.work-block-title {
+		margin-bottom: 20px;
+	}
+	.work-list {
+		justify-content: space-around;
+		align-items: center;
+	}
+	.features__features-list {
+		justify-content: space-around;
+	}
+	.activity-list__activity-item {
+		width: 50%;
+	}
+	.features-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.contact__contact-list {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.contact-list__contact-item-info {
+		width: 100%;
+		padding: 20px;
+	}
+	.contact-item-form {
+		margin-top: 0;
+	}
+}
+@media (max-width: 760px) {
+	.promo-title__title {
+		font-size: 20px;
+	}
+	.promo-text__text {
+		font-size: 14px;
+	}
+	.work-list {
+		flex-direction: column;
+	}
+	.features-list {
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 580px) {
+	.activity-list__activity-item {
+		width: 100%;
+	}
+	.contact-list__contact-item-form {
+ 		width: auto;
+	} 
+	.contact-item-form {
+		&__form {
+			flex-direction: column;
+		}
+		&__wrapper_input:nth-child(2) &__input {
+			margin-left: 0;
+		}
+		&__wrapper_input:nth-child(2) {
+			margin-top: 10px;
+		}
+		&__input, &__textarea, &__wrapper_input {
+			width: 100%;
+		}
+	}
+	.footer__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__block-text {
+		margin-bottom: 10px;
+	}
+} 
+@media (max-width: 430px) {
+	.work-item {
+		width: 100%;
+	}
+	.work-item__image {
+		max-width: 100%;
+		max-height: 265px; 
+	}
+	.features-item {
+		width: 100%;
+	}
+	.features-image-block__img {
+		width: 280px;
+		height: 160px;
 	}
 }
