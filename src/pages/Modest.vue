@@ -13,15 +13,15 @@
 </template>
 
 <script>
-  import Header from '../components/Header.vue'
-  import PromoSlider from '../components/PromoSlider.vue'
-  import AboutUs from '../components/AboutUs.vue'
-  import Team from '../components/Team.vue'
-  import Work from '../components/Work.vue'
-  import Activity from '../components/Activity.vue'
-  import Features from '../components/Features.vue'
-  import Contact from '../components/Contact.vue'
-  import Footer from '../components/Footer.vue'
+  import Header from '../components/ModestENComponents/Header.vue'
+  import PromoSlider from '../components/ModestENComponents/PromoSlider.vue'
+  import AboutUs from '../components/ModestENComponents/AboutUs.vue'
+  import Team from '../components/ModestENComponents/Team.vue'
+  import Work from '../components/ModestENComponents/Work.vue'
+  import Activity from '../components/ModestENComponents/Activity.vue'
+  import Features from '../components/ModestENComponents/Features.vue'
+  import Contact from '../components/ModestENComponents/Contact.vue'
+  import Footer from '../components/ModestENComponents/Footer.vue'
  
 export default {
   components: {
