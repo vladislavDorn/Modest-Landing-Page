@@ -3,7 +3,9 @@
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__logo header-logo">
-					<h1 class="header-logo__title">M<span class="header-logo__o">o</span>dest.</h1>
+					<a href="#">
+						<h1 class="header-logo__title">M<span class="header-logo__o">o</span>dest.</h1>
+					</a>
 				</div>
 				<div class="header__menuToggle menu-toggle" v-if="show" key="on" @click="show = false">
 					<div class="menu-toggle__hamburger hamburger" >

@@ -21,31 +21,13 @@
 					</div>
 				</div>
 				<div class="about-list__about-right-block about-right">
-					<div class="about-right__about-right-item about-right-item">
+					<div class="about-right__about-right-item about-right-item" v-for="(rightItem, index) in rightItems" :key="index">
 						<div class="about-right-item__numbering">
-							<span class="about-right-item__number-block">01</span>
+							<span class="about-right-item__number-block">{{ rightItem.number }}</span>
 						</div>
 						<div class="about-right-item__about-right-text-block about-right-text-block">
-							<h3 class="about-right-text-block__title">Dedication to the customers</h3>
-							<p class="about-right-text-block__text">Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.</p>
-						</div>
-					</div>
-					<div class="about-right__about-right-item about-right-item">
-						<div class="about-right-item__numbering">
-							<span class="about-right-item__number-block">02</span>
-						</div>
-						<div class="about-right-item__about-right-text-block about-right-text-block">
-							<h3 class="about-right-text-block__title">working closely with our clients</h3>
-							<p class="about-right-text-block__text">Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
-						</div>
-					</div>
-					<div class="about-right__about-right-item about-right-item">
-						<div class="about-right-item__numbering">
-							<span class="about-right-item__number-block">03</span>
-						</div>
-						<div class="about-right-item__about-right-text-block about-right-text-block">
-							<h3 class="about-right-text-block__title">increase happiness</h3>
-							<p class="about-right-text-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</p>
+							<h3 class="about-right-text-block__title">{{ rightItem.title }}</h3>
+							<p class="about-right-text-block__text">{{ rightItem.text }}</p>
 						</div>
 					</div>
 				</div>
@@ -55,5 +37,27 @@
 </template>
 
 <script>
-	
+	export default {
+		data () {
+			return {
+				rightItems: [
+					{
+						number: '01',
+						title: 'Dedication to the customers',
+						text: 'Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.'
+					},
+					{
+						number: '02',
+						title: 'working closely with our clients',
+						text: 'Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.'
+					},
+					{
+						number: '03',
+						title: 'increase happiness',
+						text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.'
+					}
+				]
+			}
+		}
+	}
 </script>

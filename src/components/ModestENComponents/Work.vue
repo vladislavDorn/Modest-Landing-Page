@@ -28,27 +28,27 @@
 			return {
 				works: [
 					{
-						image: 'src/assets/image/work-1.jpg',
+						image: 'static/work-1.jpg',
 						description: 'partnership guidlines'
 					},
 					{
-						image: 'src/assets/image/work-2.jpg',
+						image: 'static/work-2.jpg',
 						description: 'partnership guidlines'
 					},
 					{
-						image: 'src/assets/image/work-3.jpg',
+						image: 'static/work-3.jpg',
 						description: 'partnership guidlines'
 					},
 					{
-						image: 'src/assets/image/work-4.jpg',
+						image: 'static/work-4.jpg',
 						description: 'partnership guidlines'
 					},
 					{
-						image: 'src/assets/image/work-5.jpg',
+						image: 'static/work-5.jpg',
 						description: 'partnership guidlines'
 					},
 					{
-						image: 'src/assets/image/work-6.jpg',
+						image: 'static/work-6.jpg',
 						description: 'partnership guidlines'
 					}
 				]

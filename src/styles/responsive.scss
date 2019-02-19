@@ -1,3 +1,16 @@
+@media (max-width: 1111px) {
+	.contact__contact-list {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.contact-list__contact-item-info {
+		width: 100%;
+		padding: 20px;
+	}
+	.contact-item-form {
+		margin-top: 0;
+	}
+}
 @media (max-width: 1000px) {
 	.promo-info {
 		width: 100%!important;
@@ -63,17 +76,6 @@
 	}
 	.features-item:not(:last-child) {
 		margin-bottom: 40px;
-	}
-	.contact__contact-list {
-		flex-direction: column;
-		justify-content: space-around;
-	}
-	.contact-list__contact-item-info {
-		width: 100%;
-		padding: 20px;
-	}
-	.contact-item-form {
-		margin-top: 0;
 	}
 }
 @media (max-width: 760px) {

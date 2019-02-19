@@ -28,22 +28,22 @@
 			return {
 				items: [
 					{
-						image: 'src/assets/image/team-image-1.jpg',
+						image: 'static/team-image-1.jpg',
 						title: 'Gloria Bromley',
 						info: 'CEO and Founder'
 					},
 					{
-						image: 'src/assets/image/team-image-2.jpg',
+						image: 'static/team-image-2.jpg',
 						title: 'Paul Torres',
 						info: 'Head of Development'
 					},
 					{
-						image: 'src/assets/image/team-image-3.jpg',
+						image: 'static/team-image-3.jpg',
 						title: 'Judith Gillette',
 						info: 'Graphic Desinger'
 					},
 					{
-						image: 'src/assets/image/team-image-4.jpg',
+						image: 'static/team-image-4.jpg',
 						title: 'Delores Reed',
 						info: 'Client Service Director'
 					}

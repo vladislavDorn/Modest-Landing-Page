@@ -1,6 +1,6 @@
 <template>
 	<carousel class="promo-slider" :perPage="1" :autoplay="true" :autoplayTimeout="4000" :loop="true">
-		<slide class="promo-slider__promo-slide promo-slide" v-for="slide in slides">
+		<slide class="promo-slider__promo-slide promo-slide" v-for="(slide, index) in slides" :key="index">
 			<div class="promo-slide__promo-image">
 				<img class="promo-image__img" :src="slide.img" alt="Slider Image">
 			</div>
@@ -28,17 +28,17 @@
 			return {
 				slides: [
 				{
-					img: 'src/assets/image/promo-image.jpg',
+					img: 'static/promo-image.jpg',
 					title: 'welcome to our marketplace',
 					info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...'
 				},
 				{
-					img: 'src/assets/image/promo-image.jpg',
+					img: 'static/promo-image.jpg',
 					title: 'welcome to our marketplace',
 					info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...'
 				},
 				{
-					img: 'src/assets/image/promo-image.jpg',
+					img: 'static/promo-image.jpg',
 					title: 'welcome to our marketplace',
 					info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...'
 				}

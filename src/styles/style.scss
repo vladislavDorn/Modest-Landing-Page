@@ -292,7 +292,7 @@ a {
 }
 .about-social-nav {
 	&__link {
-		background-image: url(../assets/image/about-sprite.png) ;
+		background-image: url(../../static/about-sprite.png) ;
 		width: 60px;
 		height: 60px;
 		display: inline-block;
@@ -371,7 +371,7 @@ a {
 .team-social {
 	display: none;
 	&__link {
-		background: url(../assets/image/team-sprite.png);
+		background: url(../../static/team-sprite.png);
 		width: 50px;
 		height: 50px;
 		display: inline-block;
@@ -448,7 +448,7 @@ a {
 	transform: translate(-50%, -40%);
 	display: none;		
 	&__add {
-		background: url(../assets/image/work-plus-icon.png);
+		background: url(../../static/work-plus-icon.png);
 		width: 20px;
 		height: 20px;
 		display: block;
@@ -524,7 +524,7 @@ a {
 	}
 }
 .activity-image-block__img {
-	background: url(../assets/image/activity-sprite.png);
+	background: url(../../static/activity-sprite.png);
 	width: 55px;
 	height: 49px;
 	display: block;
@@ -726,7 +726,7 @@ a {
 		font-family: 'Open Sans', sans-serif;
 	}
 	&__social-icon {
-		background: url(../assets/image/footer-sprite.png);
+		background: url(../../static/footer-sprite.png);
 		width: 20px;
 		height: 18px;
 		display: inline-block;
